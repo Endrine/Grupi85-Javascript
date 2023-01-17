@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="ditet"></p>
+    <script>
+        let ditet = [
+            "e hene",
+            "e marte",
+            "e merkure",
+            "e enjte",
+            "e premte",
+            "e shtune",
+            "e diele"
+        ]
+
+        ditet.forEach(function (elementi, indeksi){
+            document.getElementById("ditet").innerHTML += "<p>" + indeksi + ": " + elementi + "</p>";
+        })
+
+    </script>
+</body>
+</html>

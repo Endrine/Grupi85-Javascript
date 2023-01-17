@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select  id="stinet" onchange="ndrysho()">
+        <option value="pranvera">Pranvera</option>
+        <option value="vera">Vera</option>
+        <option value="vjeshta">Vjeshta</option>
+        <option value="dimri">Dimri</option>
+
+    </select>
+    <p id="rezultati"></p>
+
+    <script>
+        function ndrysho() {
+            var stina = document.getElementById("stinet").value
+            document.getElementById("rezultati").innerHTML= "Ju keni zgjedhur " + stina
+        }
+    </script>
+
+</body>
+</html>

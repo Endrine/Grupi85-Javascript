@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid black;
+            width: 200px;
+            height: 100px;
+            overflow: scroll;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Beni scroll ne div </p>
+
+    <div onscroll="rreshqitja()">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Explicabo inventore quo odit tempora, quas enim vero odio, voluptatum quam nihil accusantium nemo, nesciunt veritatis magnam ea quod vitae sunt reiciendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam, iure mollitia magni fugit, voluptates assumenda quo dolores, velit placeat doloremque culpa. Quam ab incidunt molestias hic rem perferendis atque ut? 
+    </div>
+    <p id="rezultati"></p>
+
+
+    <script>
+        var numerimi = 0
+        function rreshqitja() {
+            document.getElementById("rezultati").innerHTML = numerimi += 1
+
+        }
+    </script>
+</body>
+</html>
